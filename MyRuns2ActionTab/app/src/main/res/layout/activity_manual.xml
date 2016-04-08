@@ -47,5 +47,5 @@
             android:layout_marginRight="10dp"
             android:onClick="onCancelClick"/>
     </LinearLayout>
-
 </LinearLayout>
+

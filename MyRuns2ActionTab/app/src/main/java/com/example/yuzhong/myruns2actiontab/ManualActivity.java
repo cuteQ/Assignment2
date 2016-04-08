@@ -74,7 +74,6 @@ public class ManualActivity extends Activity {
                 DateAndTime.get(Calendar.YEAR),
                 DateAndTime.get(Calendar.MONTH),
                 DateAndTime.get(Calendar.DAY_OF_MONTH)).show();
-
     }
     public void onTimeClicked() {
 

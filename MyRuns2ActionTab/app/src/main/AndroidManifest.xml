@@ -3,6 +3,7 @@
     package="com.example.yuzhong.myruns2actiontab">
 
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -12,8 +13,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivityWithTab"
-            android:configChanges="orientation|screenSize|keyboardHidden" >
+        <activity
+            android:name=".MainActivityWithTab"
+            android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,8 +23,11 @@
             </intent-filter>
         </activity>
         <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
-        <activity android:name=".ProfileActivity"
+        <activity
+            android:name=".ProfileActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".MapActivity" android:label="Map"/>
+        <activity android:name=".ManualActivity"></activity>
     </application>
 
 </manifest>

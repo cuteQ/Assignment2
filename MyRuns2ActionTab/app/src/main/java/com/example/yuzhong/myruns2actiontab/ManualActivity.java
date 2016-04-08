@@ -147,7 +147,7 @@ public class ManualActivity extends Activity {
                 default:
                     break;
             }
-
+            
             alert.setView(edittext);
             alert.setPositiveButton(R.string.alert_dialog_ok,
                     new DialogInterface.OnClickListener() {

@@ -69,12 +69,10 @@ public class ManualActivity extends Activity {
 
             }
         };
-
         new DatePickerDialog(this, mDateListener,
                 DateAndTime.get(Calendar.YEAR),
                 DateAndTime.get(Calendar.MONTH),
                 DateAndTime.get(Calendar.DAY_OF_MONTH)).show();
-
     }
     public void onTimeClicked() {
 
@@ -149,7 +147,7 @@ public class ManualActivity extends Activity {
                 default:
                     break;
             }
-
+            
             alert.setView(edittext);
             alert.setPositiveButton(R.string.alert_dialog_ok,
                     new DialogInterface.OnClickListener() {

@@ -73,8 +73,8 @@
         <item>Elliptical</item>
         <item>Other</item>
     </string-array>
-    
-    <string-array name = "ManualInput">
+
+    <string-array name="ManualInput">
         <item>Date</item>
         <item>Time</item>
         <item>Duration</item>

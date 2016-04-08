@@ -69,7 +69,6 @@ public class ManualActivity extends Activity {
 
             }
         };
-
         new DatePickerDialog(this, mDateListener,
                 DateAndTime.get(Calendar.YEAR),
                 DateAndTime.get(Calendar.MONTH),

@@ -40,7 +40,7 @@ public class StartFragment extends Fragment{
         ArrayAdapter<CharSequence> activityAdapter = ArrayAdapter.createFromResource(view.getContext(),
                 R.array.ActivityTypeSpinner, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
-        inputAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        activityAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         mActivityspinner.setAdapter(activityAdapter);
 

@@ -9,6 +9,7 @@ import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.InputType;
+import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,14 +17,15 @@ import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.TimePicker;
-import android.widget.Toast;
 
 import java.util.Calendar;
 
 public class ManualActivity extends Activity {
    private ListView list ;
     Calendar DateAndTime = Calendar.getInstance();
+    TextView mDisplayDateTime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,6 +82,7 @@ public class ManualActivity extends Activity {
             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                 DateAndTime.set(Calendar.HOUR_OF_DAY, hourOfDay);
                 DateAndTime.set(Calendar.MINUTE, minute);
+                updateDateAndTimeDisplay();
 
             }
         };
@@ -87,7 +90,11 @@ public class ManualActivity extends Activity {
                 DateAndTime.get(Calendar.HOUR_OF_DAY),
                 DateAndTime.get(Calendar.MINUTE), true).show();
     }
-
+    private void updateDateAndTimeDisplay() {
+        mDisplayDateTime.setText(DateUtils.formatDateTime(this,
+                DateAndTime.getTimeInMillis(), DateUtils.FORMAT_SHOW_DATE
+                        | DateUtils.FORMAT_SHOW_TIME));
+    }
     public void onInputClicked(int pos){
         showEditBox(pos);
     }

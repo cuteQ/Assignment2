@@ -20,6 +20,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:entries="@array/InputTypeSpinner"
+        android:padding="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
 
@@ -39,6 +40,7 @@
         android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:padding="10dp"
         android:entries="@array/ActivityTypeSpinner"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />

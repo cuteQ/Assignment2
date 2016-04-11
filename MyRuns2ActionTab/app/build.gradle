@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
+    compileSdkVersion 23
     buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.example.yuzhong.myruns2actiontab"
-        minSdkVersion 15
-        targetSdkVersion 21
+        minSdkVersion 21
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -24,6 +24,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
 //    compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.soundcloud.android:android-crop:1.0.1@aar'
-    compile 'com.android.support:support-v4:21.0.3'
-    compile 'com.android.support:support-v13:21.0.3'
+    compile 'com.android.support:support-v4:23.2.1'
+    compile 'com.android.support:support-v13:23.2.1'
 }

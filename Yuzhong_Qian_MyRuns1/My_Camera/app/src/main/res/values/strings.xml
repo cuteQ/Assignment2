@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My_Camera</string>
+
+    <string name="profile_photo_content_description">Your profile photo:</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_email">Your Email</string>
+    <string name="your_phone_number">Your Phone Number</string>
+    <string name="gender">Gender</string>
+    <string name="class_year">eg.2012</string>
+    <string name="your_major">Your Major</string>
+    <string name="photo_name">my_phone.jpg</string>
+    
+    <string name="savefile">save file</string>
+    <string name="save_message">Saved</string>
+    <string name="cancel_message">Canceled</string>
+    <string name="dialog_fragment_tag_photo_picker">dialog_for_photo_picker</string>
+    <string name="ui_profile_photo_picker_title">Choose</string>
+    <string-array name="photo_picker_ways">
+        <item>Take picture from camera</item>
+        <item>Select picture from gallery</item>
+    </string-array>
+</resources>
